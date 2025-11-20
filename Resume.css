@@ -1,0 +1,213 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Dark background for a modern look */
+    background-color: #1a1a2e;
+    /* Light text color for contrast */
+    color: #e0e0e0;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+/* --- Navigation Bar (nav) --- */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #0f0f19;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffc107; /* Accent color */
+    text-transform: uppercase;
+}
+
+/* Styles for the individual navigation links */
+.nav-link { /* Used a generic class 'nav-link' for all clickable nav items */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    color: #4CAF50; /* Changed hover color to Green for better contrast */
+    transform: translateY(-2px);
+}
+
+
+/* --- Introduction Section (intro) --- */
+.intro {
+    padding: 5rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 80vh; /* Ensure it takes up most of the viewport height */
+}
+
+.profile-img { /* Class added to the image */
+    width: 180px; 
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffc107;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+    margin-bottom: 2rem;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    color: #4CAF50; 
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #a0a0a0;
+    margin-bottom: 2rem;
+}
+
+.About {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    max-width: 800px;
+    text-align: left;
+    background-color: #25253e; /* Slightly different background for the text box */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tech-stack {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #ffc107;
+}
+
+/* --- Projects Section --- */
+.projects-container {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects-container h2 {
+    font-size: 2.5rem;
+    color: #ffc107;
+    margin-bottom: 3rem;
+}
+
+.project-card {
+    background-color: #25253e;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.2);
+}
+
+.project-card h3 {
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #0f0f19;
+    padding: 2rem 5%;
+    text-align: center;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 0.5rem;
+    }
+
+    nav > div:not(.logo) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .intro, .projects-container {
+        padding: 3rem 5%;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .About {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

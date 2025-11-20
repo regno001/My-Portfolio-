@@ -1,1 +1,39 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo" >Rahul</div>
+    <div class="Home ">Home</div>
+    <div class="Resume " onclick="Resume()">Resume</div>
+    <div class="projects" onclick="Project()">Projects</div>
+  </nav>
+  <div class="intro">
+  <h1>Introduction </h1>
+  <p class="About">My name is Rahul, and I am from Uttarakhand. I am currently studying at Graphic Era Hill University, where I am pursuing a Bachelor’s in Computer Applications (BCA). I am good at learning new things.
+  My core programming languages are Java and Web Development technologies such as HTML, CSS, and JavaScript. I am also familiar with the React framework. Additionally, I have knowledge of Artificial Intelligence and Machine Learning.
+  Along with this, I also know MongoDB for databases and SQL for database management, as well as Node.js, Python, C, C++, and C#.   </p>
+<img src="./Images/Profile.png " alt="https://github.com/regno001">  
+</div>
+<footer>
+ <a href=""><img src="./Images/github-seeklogo.png">Github</a>
+ <a href=""><img src="./Images/linkdin.png">Linkdin</a>
+ <a href=""><img src="./Images/Instagram.png">Instagram</a>
+ 
+  
+</footer>
+</body>
+<script>
+  function Resume(){
+    window.location.href="Resume.html"
+  }
+  function Project(){
+    window.location.href="Projects.html"
+  }
+</script>
+</html>
