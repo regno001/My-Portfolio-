@@ -1,0 +1,183 @@
+/* Reset and Base Styles */
+* {
+  font-family: system-ui;
+    /* Ensures padding and border are included in the element's total width and height */
+    box-sizing: border-box;
+    /* Removes default margins and padding */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Modern, easy-to-read font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Dark background for a modern look */
+    background-color: #1a1a2e;
+    /* Light text color for contrast */
+    color: #e0e0e0;
+    /* Smooth scrolling behavior */
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+/* --- Navigation Bar (nav) --- */
+nav {
+    /* Fixed at the top for easy access */
+    position: sticky;
+    top: 0;
+    /* Slightly lighter dark background */
+    background-color: #0f0f19;
+    padding: 1rem 5%; /* Vertical padding and horizontal padding for spacing */
+    display: flex; /* Flex layout for alignment */
+    justify-content: space-between; /* Space out the logo and navigation links */
+    align-items: center; /* Vertically center items */
+    /* Subtle shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Ensure it stays above other content */
+    z-index: 1000;
+}
+
+.logo {
+    /* Highlight the name */
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffc107; /* A bright accent color (e.g., gold/yellow) */
+    text-transform: uppercase;
+}
+
+/* Styles for the individual navigation links (Home, Resume, Projects) */
+.Home, .Resume, .projects {
+    /* Convert the div elements into link-like buttons */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s;
+    font-size: 1rem;
+    font-weight: 500;
+    /* Use the primary text color */
+    color: #e0e0e0;
+}
+
+/* Hover effect for navigation links */
+.Home:hover, .Resume:hover, .projects:hover {
+    color: #ffc107; /* Change text color to accent color on hover */
+    /* Subtle lift effect */
+    transform: translateY(-2px);
+}
+
+
+/* --- Introduction Section (intro) --- */
+.intro {
+    padding: 5rem 5%; /* Generous padding for content */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the entire section on the page */
+}
+
+.intro h1 {
+    font-size: 3rem;
+    color: #4CAF50; /* A friendly, professional color (e.g., green) */
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.About {
+    font-size: 1.15rem;
+    /* Lighter text for the main body */
+    color: #a0a0a0;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    text-align: left; /* Keep long text left-aligned for readability */
+}
+
+/* Profile Image Styling */
+.intro img {
+    width: 200px; /* Fixed size for the profile image */
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #ffc107; /* Accent border for emphasis */
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5); /* Glowing effect */
+    margin-top: 1.5rem;
+}
+
+/* --- Footer --- */
+footer {
+    /* Darker background for the footer */
+    background-color: #0f0f19;
+    padding: 2rem 5%;
+    text-align: center;
+    border-top: 1px solid #333; /* Separator line */
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between links */
+}
+
+footer a {
+    /* Removes default link underline */
+    text-decoration: none;
+    /* Text color for links */
+    color: #e0e0e0;
+    font-size: 1rem;
+    display: flex; /* Align image and text */
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #4CAF50; /* Hover color for social links */
+}
+
+footer img {
+    /* Style for social media icons */
+    width: 24px;
+    height: 24px;
+    /* Optional: Filter for icon colors (may vary based on original image) */
+    /* filter: invert(1); */
+}
+
+/* --- Responsive Adjustments (for smaller screens) --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items vertically on small screens */
+        padding: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Group the navigation links for better alignment */
+    nav > div:not(.logo) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Home, .Resume, .projects {
+        /* Reduce padding and margin for smaller space */
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .intro {
+        padding: 3rem 5%;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .About {
+        font-size: 1rem;
+        text-align: justify; /* Justify text on small screens */
+    }
+
+    footer {
+        flex-direction: column; /* Stack footer links vertically */
+        gap: 15px;
+    }
+}
