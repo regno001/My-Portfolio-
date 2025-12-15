@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
 nav {
   display: flex;
   align-items: center;
@@ -33,4 +45,92 @@ nav a::after {
 
 nav a:hover::after {
   width: 100%;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 14px;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid black;
+  margin: 20px 0;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 1.5px solid black;
+  padding-bottom: 5px;
+}
+
+section p,
+section li {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.download {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: black;
+  color: white;
+}
+footer {
+  border-top: 2px solid #000;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
 }
