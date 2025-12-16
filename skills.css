@@ -158,19 +158,17 @@ footer img {
     font-size: 13px;
   }
 
-  /* FOOTER */
-  footer {
-    padding: 20px;
-    gap: 20px;
-    flex-wrap: wrap;
+   footer {
+    padding: 20px ;
+    gap: 10px;
   }
 
   footer a {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   footer img {
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
   }
 }
