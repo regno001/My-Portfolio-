@@ -122,10 +122,10 @@ footer a:hover {
     padding: 16px 20px;
   }
 
-  nav .logo {
-    width: 100%;
+ .nav-logo {
+   
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   nav a {
@@ -156,18 +156,17 @@ footer a:hover {
     line-height: 1.5;
   }
 
-  /* FOOTER */
-  footer {
-    padding: 18px;
-    margin-top: 40px;
+footer {
+    padding: 15px ;
+    gap: 5px;
   }
 
   footer a {
-    font-size: 10px;
-    margin: 0 8px;
+    font-size: 8px;
   }
 
   footer img {
-    width: 25px;
+    width: 30px;
+    height: 30px;
   }
 }
