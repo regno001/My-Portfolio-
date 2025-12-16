@@ -112,3 +112,65 @@ footer img {
   height: 20px;
 }
 
+/* ===================== MOBILE (≤768px) ===================== */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+
+  nav .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  /* SKILLS CONTAINER */
+  .skills-container {
+    margin: 30px auto;
+    padding: 14px;
+  }
+
+  .skills-container h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .skill-section h2 {
+    font-size: 18px;
+  }
+
+  /* SKILLS BUTTONS */
+  .skills {
+    gap: 10px;
+  }
+
+  .skills button {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  footer a {
+    font-size: 13px;
+  }
+
+  footer img {
+    width: 18px;
+    height: 18px;
+  }
+}

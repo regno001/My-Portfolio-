@@ -60,7 +60,8 @@ nav a:hover::after {
 
 .intro h1 {
   font-size: 55px;
-  font-family: serif;
+font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+font-weight: normal
 }
 
 /* PROFILE WRAPPER */
@@ -161,11 +162,68 @@ footer img {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .intro h1 {
-    font-size: 36px;
+
+  /* NAVBAR */
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 20px;
   }
 
+  .nav-logo {
+   
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* INTRO */
+  .intro {
+    padding: 60px 16px 30px;
+    gap: 30px;
+  }
+
+  .intro h1 {
+    font-size: 34px;
+  }
+
+  /* PROFILE */
   .profile-wrapper {
-    transform: scale(0.85);
+    width: 220px;
+    height: 220px;
+  }
+
+  .profile-img {
+    width: 130px;
+    height: 170px;
+  }
+
+  .tech {
+    width: 40px;
+    height: 40px;
+    --radius: 120px;
+  }
+
+  /* SUMMARY */
+  .summary {
+   
+    padding: 24px;
+    font-size: 16px;
+  }
+
+ 
+  footer {
+    padding: 24px 1px;
+    gap: 20px;
+  }
+
+  footer a {
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  footer img {
+    width: 30px;
+    height: 30px;
   }
 }
