@@ -112,3 +112,62 @@ footer img {
 footer a:hover {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+
+  nav .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  /* PROJECTS */
+  .projects-section {
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+
+  .project-card {
+    padding: 16px;
+  }
+
+  .project-card h2 {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 18px;
+    margin-top: 40px;
+  }
+
+  footer a {
+    font-size: 13px;
+    margin: 0 8px;
+  }
+
+  footer img {
+    width: 14px;
+  }
+}
