@@ -1,120 +1,155 @@
-/* Reset */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Body */
+/* BODY */
 body {
-  background-color: #ffffff;
-  color: #000000;
+  background: #ffffff;
+  color: #000;
   line-height: 1.6;
 }
 
-/* Navigation */
+/* NAVBAR */
 nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 30px;
   padding: 20px 60px;
   border-bottom: 2px solid #000;
 }
 
-nav .logo {
-  font-weight: 700;
+.nav-logo {
   font-size: 20px;
+  font-weight: 700;
   margin-right: auto;
 }
 
 nav a {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
   position: relative;
 }
 
 nav a::after {
   content: "";
   position: absolute;
-  width: 0;
-  height: 2px;
-  background: #000;
   left: 0;
   bottom: -4px;
-  transition: width 0.3s ease;
+  width: 0;
+  height: 2px;
+  background: #3f14ff;
+  transition: 0.3s;
 }
 
 nav a:hover::after {
   width: 100%;
 }
 
-/* Intro Section */
+/* INTRO */
 .intro {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 40px;
   padding: 80px 20px 40px;
 }
 
 .intro h1 {
-  font-family:  serif;
   font-size: 55px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.8s ease-out forwards;
+  font-family: serif;
 }
 
-/* Animation */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-   
-  }
-  to {
-    opacity: 1;
-    
-  }
+/* PROFILE WRAPPER */
+.profile-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
 }
 
-
-.intro img {
-  width: 125px;
-  height: 224px;
-  object-fit: cover;
-  border: 3px solid #000;
+/* PROFILE IMAGE */
+.profile-img {
+  width: 170px;
+  height: 215px;
+  border-radius: 120px;
+  object-fit: fill;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 15px 40px rgba(67, 83, 255, 0.3);
+  z-index: 2;
 }
 
-/* Summary Section */
-.Summery {
+.tech {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  --radius: 140px;
+
+  top: 50%;
+  left: 50%;
+  animation: floatDiagonal 4s ease-in-out infinite;
+}
+
+.tech img {
+  width: 121%;
+  height: 118%;
+  
+  object-fit: fill;
+}
+
+.tech:nth-child(1) { transform: translate(-50%, -50%) translateY(calc(-1 * var(--radius))); }
+.tech:nth-child(2) { transform: translate(-50%, -50%) translateX(var(--radius)); }
+.tech:nth-child(3) { transform: translate(-50%, -50%) translateY(var(--radius)); }
+.tech:nth-child(4) { transform: translate(-50%, -50%) translateX(calc(-1 * var(--radius))); }
+
+.tech:nth-child(5) { transform: translate(-50%, -50%) translate(100px, -100px); }
+.tech:nth-child(6) { transform: translate(-50%, -50%) translate(100px, 100px); }
+.tech:nth-child(7) { transform: translate(-50%, -50%) translate(-100px, 100px); }
+.tech:nth-child(8) { transform: translate(-50%, -50%) translate(-100px, -100px); }
+
+/* TECH GLOWS */
+.html   { box-shadow: 0 0 15px #e34c26; }
+.c      { box-shadow: 0 0 15px #00599c; }
+.csharp { box-shadow: 0 0 15px #9b4f96; }
+.python { box-shadow: 0 0 15px #3776ab; }
+.react  { box-shadow: 0 0 15px #61dafb; }
+.java   { box-shadow: 0 0 15px #f89820; }
+.node   { box-shadow: 0 0 15px #3c873a; }
+.js     { box-shadow: 0 0 15px #f7df1e; }
+
+/* SUMMARY */
+.summary {
   max-width: 900px;
   margin: 40px auto;
   padding: 40px;
   border-top: 2px solid #000;
-}
-
-.Summery h1 {
-  font-size: 20px;
-  font-weight: 400;
   text-align: center;
+  font-size: 18px;
 }
 
-/* Footer (if you enable it later) */
+/* FOOTER */
 footer {
   border-top: 2px solid #000;
   padding: 30px;
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 footer a {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -122,26 +157,15 @@ footer a {
 
 footer img {
   width: 20px;
-  height: 20px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .intro {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .intro h1 {
     font-size: 36px;
   }
 
-  .Summery h1 {
-    font-size: 18px;
+  .profile-wrapper {
+    transform: scale(0.85);
   }
 }
