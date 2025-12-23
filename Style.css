@@ -29,26 +29,43 @@ nav {
 }
 
 nav a {
+  position: relative;
   text-decoration: none;
   color: #000;
-  position: relative;
+  font-weight: 500;
+  padding: 8px 14px;
+  overflow: hidden;
+  transition: color 0.35s ease;
+  z-index: 1;
+  border-radius: 50px;
 }
 
-nav a::after {
+/* BACKGROUND FILL EFFECT */
+nav a::before {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -4px;
+  top: 50%;
+  left: 50%;
   width: 0;
-  height: 2px;
-  background: #3f14ff;
-  transition: 0.3s;
+  height: 0;
+  background: #2d3eff;
+ border-radius: 50px;
+  transform: translate(-50%, -50%);
+  transition: width 0.35s ease, height 0.35s ease;
+  z-index: -1;
 }
 
-nav a:hover::after {
-  width: 100%;
+/* HOVER EFFECT */
+nav a:hover::before {
+  width: 120%;
+  height: 300%;
+  border-radius: 50px;
 }
 
+nav a:hover {
+  color: #ffffff;
+  border-radius: 50px;
+}
 /* INTRO */
 .intro {
   display: flex;
