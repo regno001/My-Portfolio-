@@ -1,66 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rahul Rawat is a developer building thoughtful web applications and practical AI projects.">
+  <title>Rahul Rawat | Developer Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<nav>
-  <div class="nav-logo">Regno</div>
-  <a href="Index.html">Home</a>
-  <a href="Projects.html">Projects</a>
-  <a href="Resume.html">Resume</a>
-  <a href="skills.html">Skills</a>
-  
-</nav>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="Index.html" aria-label="Rahul Rawat, home">
+        <span class="brand-mark">RR</span>
+        <span class="brand-name">Rahul Rawat</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation"><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a class="active" href="Index.html" aria-current="page">Home</a>
+        <a href="Projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="Resume.html">Resume</a>
+        <a class="nav-cta" href="mailto:rwt7454@gmail.com">Let's talk</a>
+      </div>
+    </nav>
+  </header>
 
-<section class="intro">
-  <h1>Rahul Rawat</h1>
+  <main id="main-content">
+    <section class="hero container">
+      <div class="hero-copy" data-reveal>
+        <span class="eyebrow">Developer based in Dehradun</span>
+        <h1>Building ideas <span>into products.</span></h1>
+        <p>I am Rahul, a computer science student focused on thoughtful web experiences, useful full-stack products, and practical AI applications.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="Projects.html">Explore my work <span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="button button-secondary" href="./Images/Rahul_Rawat_Resume.pdf" download>Download resume</a>
+        </div>
+        <div class="hero-stats" aria-label="Portfolio highlights">
+          <div class="stat"><strong>04</strong><span>Projects</span></div>
+          <div class="stat"><strong>Full-stack</strong><span>Web focus</span></div>
+          <div class="stat"><strong>AI</strong><span>Exploring</span></div>
+        </div>
+      </div>
 
-  <div class="profile-wrapper">
-    <img src="./Images/IMG_4592.png" alt="Profile" class="profile-img" />
+      <div class="hero-visual" data-reveal>
+        <div class="portrait-card">
+          <img src="./Images/rahul-portrait.webp" alt="Rahul Rawat seated outdoors" width="1000" height="1500">
+          <div class="portrait-caption">
+            <div><p>Currently</p><strong>Learning by building</strong></div>
+            <span class="status-dot" aria-hidden="true"></span>
+          </div>
+        </div>
+        <span class="orbit-chip orbit-chip-one">Java + Python</span>
+        <span class="orbit-chip orbit-chip-two">React + Node.js</span>
+        <span class="orbit-chip orbit-chip-three">Curious by default</span>
+      </div>
+    </section>
 
-    <div class="tech-ring">
-      <span class="tech html"><img src="./Images/browser.png" alt=""></span>
-      <span class="tech c"><img src="./Images/c-.png" alt=""></span>
-      <span class="tech csharp"><img src="./Images/c-sharp.png" alt=""></span>
-      <span class="tech python"><img src="./Images/python (1).png" alt=""></span>
-      <span class="tech react"><img src="./Images/physics.png" alt=""></span>
-      <span class="tech java"><img src="./Images/java.png" alt=""></span>
-      <span class="tech node"><img src="./Images/nodejs.png" alt=""></span>
-      <span class="tech js"><img src="./Images/js.png" alt=""></span>
+    <div class="tech-strip" aria-label="Technologies">
+      <div class="tech-strip-inner">
+        <div class="tech-strip-list"><span>Java</span><span>Python</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>MongoDB</span><span>MySQL</span><span>PHP</span></div>
+        <div class="tech-strip-list" aria-hidden="true"><span>Java</span><span>Python</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>MongoDB</span><span>MySQL</span><span>PHP</span></div>
+      </div>
     </div>
-  </div>
-</section>
 
-<section class="summary">
-  <p>
-    Enthusiastic computer science student with a strong interest in Java and web development.
-    Experienced in building responsive, real-world web applications using HTML, CSS, JavaScript,
-    React, Node.js, and MongoDB. Proficient in Python for exploring AI and machine learning concepts
-    and applying them to practical projects. A quick learner driven by problem-solving and scalable
-    solutions.
-  </p>
-</section>
+    <section class="section container" id="about">
+      <div class="section-heading" data-reveal>
+        <p class="section-kicker">01 / About</p>
+        <div>
+          <h2>Code with purpose.</h2>
+          <p>I enjoy turning an early idea into something clear, responsive, and genuinely useful.</p>
+        </div>
+      </div>
+      <div class="about-grid">
+        <article class="about-card" data-reveal>
+          <p>I work across the stack, from polished interfaces to server-side logic. <span>My current interests sit where web engineering, real-time collaboration, and applied AI meet.</span></p>
+        </article>
+        <aside class="principles-card" data-reveal>
+          <h3>What guides my work</h3>
+          <ol class="principles-list">
+            <li><span>01</span>Keep it clear</li>
+            <li><span>02</span>Build for people</li>
+            <li><span>03</span>Learn in public</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
 
-<footer>
-  <a href="https://github.com/regno001" target="_blank">
-    <img src="./Images/github-seeklogo.png"> GitHub
-  </a>
-  <a href="https://www.linkedin.com/in/rahul-rawat-992863321/" target="_blank">
-    <img src="./Images/linkdin.png"> LinkedIn
-  </a>
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rwt7454@gmail.com&su=Hello" target="_blank">
-    <img src="./Images/gmail.png"> Gmail
-  </a>
-  <a href="https://www.instagram.com/rahul.rwt.01" target="_blank">
-    <img src="./Images/Instagram.png"> Instagram
-  </a>
-</footer>
+    <section class="section container" id="selected-work">
+      <div class="section-heading" data-reveal>
+        <p class="section-kicker">02 / Selected work</p>
+        <div>
+          <h2>Projects built around real problems.</h2>
+        </div>
+      </div>
+      <div class="projects-list" data-reveal>
+        <article class="project-row">
+          <span class="project-number">01</span>
+          <h3>WatchParty</h3>
+          <div><p>A collaborative space for synchronized video, calls, chat, and media sharing.</p><div class="project-tags"><span class="tag">Real-time</span><span class="tag">Full-stack</span></div></div>
+          <span class="project-arrow" aria-hidden="true">+</span>
+        </article>
+        <article class="project-row">
+          <span class="project-number">02</span>
+          <h3>AI Traffic Control</h3>
+          <div><p>Dynamic lane management with vehicle detection and ambulance priority handling.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">Computer vision</span></div></div>
+          <span class="project-arrow" aria-hidden="true">+</span>
+        </article>
+        <article class="project-row">
+          <span class="project-number">03</span>
+          <h3>Food Ordering</h3>
+          <div><p>An ordering platform with secure authentication and an operations-focused admin panel.</p><div class="project-tags"><span class="tag">PHP</span><span class="tag">MySQL</span></div></div>
+          <span class="project-arrow" aria-hidden="true">+</span>
+        </article>
+      </div>
+      <div class="section-footer"><a class="button button-secondary" href="Projects.html">View all projects <span class="arrow" aria-hidden="true">&nearr;</span></a></div>
+    </section>
 
+    <section class="cta-section container" data-reveal>
+      <div class="cta-card">
+        <p>Have a project or an idea?</p>
+        <h2>Let's make something useful.</h2>
+        <a class="button" href="mailto:rwt7454@gmail.com">Start a conversation <span class="arrow" aria-hidden="true">&nearr;</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div><p class="footer-title">Find me online</p><div class="social-links"><a href="https://github.com/regno001" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/rahul-rawat-992863321/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:rwt7454@gmail.com">Email</a><a href="https://www.instagram.com/rahul.rwt.01" target="_blank" rel="noreferrer">Instagram</a></div></div>
+      <p class="copyright">&copy; <span data-year></span> Rahul Rawat<br>Designed and built with care.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>

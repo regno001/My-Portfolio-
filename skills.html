@@ -1,83 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Skills</title>
-  <link rel="stylesheet" href="skills.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The technologies and working approach behind Rahul Rawat's projects.">
+  <title>Skills | Rahul Rawat</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-
-  <nav>
-    <div class="logo">Regno</div>
-    <a href="Index.html">Home</a>
-    <a href="Projects.html">Projects</a>
-    <a href="Resume.html">Resume</a>
-    <a href="skills.html">Skills</a>
-  </nav>
-
-  <div class="skills-container">
-    <h1>Skills</h1>
-
-    <div class="skill-section">
-      <h2>Programming Languages</h2>
-      <div class="skills">
-        <button class="skill-btn">Java</button>
-        <button class="skill-btn">Python</button>
-        <button class="skill-btn">JavaScript</button>
-        <button class="skill-btn">PHP</button>
-        <button class="skill-btn">C</button>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="Index.html" aria-label="Rahul Rawat, home"><span class="brand-mark">RR</span><span class="brand-name">Rahul Rawat</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation"><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="Index.html">Home</a><a href="Projects.html">Projects</a><a class="active" href="skills.html" aria-current="page">Skills</a><a href="Resume.html">Resume</a><a class="nav-cta" href="mailto:rwt7454@gmail.com">Let's talk</a>
       </div>
-    </div>
+    </nav>
+  </header>
 
-    <div class="skill-section">
-      <h2>Web Development</h2>
-      <div class="skills">
-        <button class="skill-btn">HTML</button>
-        <button class="skill-btn">CSS</button>
-        <button class="skill-btn">React</button>
-        <button class="skill-btn">Node.js</button>
-        <button class="skill-btn">MongoDB</button>
+  <main id="main-content">
+    <section class="page-hero container">
+      <div data-reveal><span class="eyebrow">Tools and strengths</span><h1>A growing toolkit for useful products.</h1></div>
+      <div data-reveal><p class="page-hero-copy">I choose technology around the problem, then keep learning until the pieces work together cleanly.</p><div class="page-hero-meta"><span>Full-stack</span><span>AI curious</span></div></div>
+    </section>
+
+    <section class="section container" aria-labelledby="skills-heading">
+      <div class="section-heading" data-reveal><p class="section-kicker">01 / Toolkit</p><div><h2 id="skills-heading">What I work with.</h2><p>Languages, frameworks, and fundamentals I use to turn an idea into a working application.</p></div></div>
+      <div class="skills-grid">
+        <article class="skill-group" data-reveal><span class="skill-group-number">01</span><h2>Programming languages</h2><div class="skills"><span class="skill-pill">Java</span><span class="skill-pill">Python</span><span class="skill-pill">JavaScript</span><span class="skill-pill">PHP</span><span class="skill-pill">C</span></div></article>
+        <article class="skill-group" data-reveal><span class="skill-group-number">02</span><h2>Web development</h2><div class="skills"><span class="skill-pill">HTML</span><span class="skill-pill">CSS</span><span class="skill-pill">React</span><span class="skill-pill">Node.js</span><span class="skill-pill">Express.js</span></div></article>
+        <article class="skill-group" data-reveal><span class="skill-group-number">03</span><h2>Data and foundations</h2><div class="skills"><span class="skill-pill">MySQL</span><span class="skill-pill">MongoDB</span><span class="skill-pill">DBMS</span><span class="skill-pill">DSA</span><span class="skill-pill">.NET</span></div></article>
+        <article class="skill-group" data-reveal><span class="skill-group-number">04</span><h2>Human skills</h2><div class="skills"><span class="skill-pill">Problem solving</span><span class="skill-pill">Adaptability</span><span class="skill-pill">Collaboration</span><span class="skill-pill">Continuous learning</span></div></article>
       </div>
-    </div>
+    </section>
 
-    <div class="skill-section">
-      <h2>Databases</h2>
-      <div class="skills">
-        <button class="skill-btn">MySQL</button>
-        <button class="skill-btn">MongoDB</button>
+    <section class="section container" aria-labelledby="process-heading">
+      <div class="section-heading" data-reveal><p class="section-kicker">02 / Approach</p><div><h2 id="process-heading">How I like to work.</h2></div></div>
+      <div class="process-grid">
+        <article class="process-card" data-reveal><span>01</span><h3>Understand</h3><p>Start with the user, the problem, and what success should actually look like.</p></article>
+        <article class="process-card" data-reveal><span>02</span><h3>Build</h3><p>Turn the core idea into a working version, keeping structure and clarity in view.</p></article>
+        <article class="process-card" data-reveal><span>03</span><h3>Improve</h3><p>Test, listen, refine, and use every project to sharpen the next one.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="skill-section">
-      <h2>Other Technologies</h2>
-      <div class="skills">
-        <button class="skill-btn">.NET</button>
-        <button class="skill-btn">DBMS</button>
-        <button class="skill-btn">DSA</button>
-      </div>
-    </div>
+    <section class="cta-section container" data-reveal><div class="cta-card"><p>See these skills in context</p><h2>Explore what I have built.</h2><a class="button" href="Projects.html">View projects <span class="arrow" aria-hidden="true">&nearr;</span></a></div></section>
+  </main>
 
-    <div class="skill-section">
-      <h2>Soft Skills</h2>
-      <div class="skills">
-        <button class="skill-btn">Problem-solving</button>
-        <button class="skill-btn">Adaptability</button>
-        <button class="skill-btn">Team Collaboration</button>
-        <button class="skill-btn">Continuous Learning</button>
-      </div>
-    </div>
-
-  </div>
-<footer>
- <a href="https://github.com/regno001"><img src="./Images/github-seeklogo.png">Github</a>
- <a href="https://www.linkedin.com/in/rahul-rawat-992863321/"><img src="./Images/linkdin.png">Linkdin</a>
- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rwt7454@gmail.com&su=Hello" target="_blank"><img src="./Images/gmail.png" alt="">
- Gmail
-</a>
- <a href="https://www.instagram.com/rahul.rwt.01?igsh=YThoODdhazM3ODU1"><img src="./Images/Instagram.png">Instagram</a>
- 
-  
-</footer>
+  <footer class="site-footer"><div class="footer-inner container"><div><p class="footer-title">Find me online</p><div class="social-links"><a href="https://github.com/regno001" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/rahul-rawat-992863321/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:rwt7454@gmail.com">Email</a><a href="https://www.instagram.com/rahul.rwt.01" target="_blank" rel="noreferrer">Instagram</a></div></div><p class="copyright">&copy; <span data-year></span> Rahul Rawat<br>Designed and built with care.</p></div></footer>
+  <script src="main.js"></script>
 </body>
 </html>

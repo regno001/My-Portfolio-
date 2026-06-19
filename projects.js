@@ -1,35 +1,46 @@
 const projects = [
   {
     title: "WatchParty Web Application",
-    description:
-      "Collaborative web application enabling users to video call, chat, watch YouTube videos, and share photos and videos in real time."
+    type: "Real-time web app",
+    description: "A collaborative application where people can video call, chat, watch YouTube together, and share media in real time.",
+    stack: ["JavaScript", "Real-time", "Full-stack"]
   },
   {
-    title: "Food Ordering Website with Admin Panel",
-    description:
-      "Developed a complete food ordering system using PHP, featuring secure authentication and an admin panel for managing orders, users, and menu items."
+    title: "Food Ordering Platform",
+    type: "Commerce system",
+    description: "A complete ordering experience with secure authentication and an admin panel for managing users, orders, and menu items.",
+    stack: ["PHP", "MySQL", "Admin panel"]
   },
   {
-    title: "Traffic Control System using AI",
-    description:
-      "Python-based system for dynamic traffic management using vehicle and lane detection, including ambulance priority handling and traffic violation detection."
+    title: "AI Traffic Control System",
+    type: "Applied AI",
+    description: "A dynamic traffic management system using lane and vehicle detection, with ambulance priority and violation detection.",
+    stack: ["Python", "Computer vision", "AI"]
   },
   {
-    title: "Hand Sign Detection using Python",
-    description:
-      "AI-powered application that detects and interprets hand gestures for real-time interaction and control."
+    title: "Hand Sign Detection",
+    type: "Computer vision",
+    description: "A real-time application that detects and interprets hand gestures for natural interaction and control.",
+    stack: ["Python", "Machine learning", "Real-time"]
   }
 ];
 
 const container = document.getElementById("projects-container");
 
-projects.forEach(project => {
-  const card = document.createElement("div");
+projects.forEach((project, index) => {
+  const card = document.createElement("article");
   card.className = "project-card";
+  card.setAttribute("data-reveal", "");
 
+  const tags = project.stack.map((item) => `<span class="tag">${item}</span>`).join("");
   card.innerHTML = `
+    <div class="project-card-top">
+      <span class="project-type">${project.type}</span>
+      <span class="project-card-index">${String(index + 1).padStart(2, "0")}</span>
+    </div>
     <h2>${project.title}</h2>
     <p>${project.description}</p>
+    <div class="project-tags">${tags}</div>
   `;
 
   container.appendChild(card);

@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects</title>
-  <link rel="stylesheet" href="Projects.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected web development and AI projects by Rahul Rawat.">
+  <title>Projects | Rahul Rawat</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="Index.html" aria-label="Rahul Rawat, home"><span class="brand-mark">RR</span><span class="brand-name">Rahul Rawat</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation"><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="Index.html">Home</a><a class="active" href="Projects.html" aria-current="page">Projects</a><a href="skills.html">Skills</a><a href="Resume.html">Resume</a><a class="nav-cta" href="mailto:rwt7454@gmail.com">Let's talk</a>
+      </div>
+    </nav>
+  </header>
 
-  <nav>
-    <div class="logo">Regno</div>
-    <a href="Index.html">Home</a>
-    <a href="Projects.html">Projects</a>
-    <a href="Resume.html">Resume</a>
-    <a href="skills.html">Skills</a>
-  </nav>
+  <main id="main-content">
+    <section class="page-hero container">
+      <div data-reveal><span class="eyebrow">Selected work</span><h1>Ideas, built into working products.</h1></div>
+      <div data-reveal><p class="page-hero-copy">A collection of full-stack and AI projects shaped by practical problems, curiosity, and a lot of iteration.</p><div class="page-hero-meta"><span>04 projects</span><span>Web + AI</span></div></div>
+    </section>
 
-  <section class="projects-section">
-    <h1 class="section-title">Projects</h1>
+    <section class="section container" aria-labelledby="projects-heading">
+      <div class="section-heading" data-reveal><p class="section-kicker">Project index</p><div><h2 id="projects-heading">The work so far.</h2></div></div>
+      <div class="projects-grid" id="projects-container"></div>
+    </section>
 
-    <!-- SINGLE DIV -->
-    <div id="projects-container"></div>
-  </section>
+    <section class="cta-section container" data-reveal>
+      <div class="cta-card"><p>Building something interesting?</p><h2>Let's compare notes.</h2><a class="button" href="mailto:rwt7454@gmail.com">Send me an email <span class="arrow" aria-hidden="true">&nearr;</span></a></div>
+    </section>
+  </main>
 
-  <footer>
-    <a href="https://github.com/regno001" target="_blank">
-      <img src="./Images/github-seeklogo.png" alt=""> GitHub
-    </a>
-    <a href="https://www.linkedin.com/in/rahul-rawat-992863321/" target="_blank">
-      <img src="./Images/linkdin.png" alt=""> LinkedIn
-    </a>
-    <a href="mailto:rwt7454@gmail.com">
-      <img src="./Images/gmail.png" alt=""> Gmail
-    </a>
-    <a href="https://www.instagram.com/rahul.rwt.01" target="_blank">
-      <img src="./Images/Instagram.png" alt=""> Instagram
-    </a>
-  </footer>
-
+  <footer class="site-footer"><div class="footer-inner container"><div><p class="footer-title">Find me online</p><div class="social-links"><a href="https://github.com/regno001" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/rahul-rawat-992863321/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:rwt7454@gmail.com">Email</a><a href="https://www.instagram.com/rahul.rwt.01" target="_blank" rel="noreferrer">Instagram</a></div></div><p class="copyright">&copy; <span data-year></span> Rahul Rawat<br>Designed and built with care.</p></div></footer>
   <script src="projects.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
