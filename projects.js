@@ -7,6 +7,13 @@ const projects = [
     url: "https://watchers-watchparty-web-application.onrender.com/"
   },
   {
+    title: "DoCode",
+    type: "Interactive classroom",
+    description: "A real-time coding classroom where teachers can host rooms and students can join to practice together.",
+    stack: ["JavaScript", "Education", "Real-time"],
+    url: "https://docode-e4jc.onrender.com/"
+  },
+  {
     title: "Food Ordering Platform",
     type: "Commerce system",
     description: "A complete ordering experience with secure authentication and an admin panel for managing users, orders, and menu items.",
@@ -23,13 +30,6 @@ const projects = [
     type: "Computer vision",
     description: "A real-time application that detects and interprets hand gestures for natural interaction and control.",
     stack: ["Python", "Machine learning", "Real-time"]
-  },
-  {
-    title: "DoCode",
-    type: "Interactive classroom",
-    description: "A real-time coding classroom where teachers can host rooms and students can join to practice together.",
-    stack: ["JavaScript", "Education", "Real-time"],
-    url: "https://docode-e4jc.onrender.com/"
   }
 ];
 
