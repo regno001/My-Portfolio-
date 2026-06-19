@@ -647,6 +647,10 @@ button {
   transform: rotate(45deg);
 }
 
+.project-row[href]:hover .project-arrow {
+  transform: translate(2px, -2px);
+}
+
 .section-footer {
   margin-top: 34px;
   text-align: right;
@@ -807,10 +811,38 @@ button {
   margin-top: 28px;
 }
 
+.project-live-link {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  padding: 9px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--paper);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.project-live-link:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--ink);
+}
+
 .project-card:nth-child(2) .tag,
 .project-card:nth-child(3) .tag {
   border-color: rgba(17, 19, 15, 0.18);
   color: #565950;
+}
+
+.project-card:nth-child(2) .project-live-link,
+.project-card:nth-child(3) .project-live-link {
+  border-color: rgba(17, 19, 15, 0.25);
+  color: var(--ink);
 }
 
 .project-card-index {
